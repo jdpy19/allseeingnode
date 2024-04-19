@@ -1,0 +1,20 @@
+<div class="block">
+  <div class="block_header">
+    <div class="block_height"><%= block.height %></div>
+    <div class="block_time"><%= Time.at(block.time) %></div>
+  </div>
+  <div class="block_body">
+    <div class="block_field">
+      <div class="block_field_label">Block Hash</div>
+      <div class="block_field_value"><%= block.block_hash %></div>
+    </div>
+    <div class="block_field">
+      <div class="block_field_label">Total Fee</div>
+      <div class="block_field_value"><%= block.total_fee %></div>
+    </div>
+    <div class="block_field">
+      <div class="block_field_label">Subsidy</div>
+      <div class="block_field_value"><%= block.subsidy %></div>
+    </div>
+  </div>
+</div>

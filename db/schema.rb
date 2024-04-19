@@ -10,8 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 0) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_19_172855) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "blocks", force: :cascade do |t|
+    t.string "block_hash"
+    t.integer "height"
+    t.integer "time"
+    t.integer "total_fee"
+    t.integer "subsidy"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

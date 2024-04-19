@@ -1,0 +1,14 @@
+<%= turbo_stream_from "blocks" %>
+<main class="container">
+  <div class="header">
+    <h1>Halving Party 2024</h1>
+    <h2>Latest Block Height:
+      <div id="block_height">
+        <%= @blocks.first&.height || "TBD" %>
+      </div>
+    </h2>
+  </div>
+  <%= turbo_frame_tag "blocks" do %>
+    <%= render @blocks %>
+  <% end %>
+</main>

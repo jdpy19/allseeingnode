@@ -1,0 +1,29 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-primary);
+  margin: var(--space-m) 0;
+  &_header {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--space-s);
+  }
+  &_field {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: var(--space-m);
+    &_label {
+      font-weight: 500;
+    }
+    &_value {
+      padding-left: var(--space-m);
+    }
+  }
+}
