@@ -4,7 +4,7 @@ class CreateBlocks < ActiveRecord::Migration[7.1]
       t.string :block_hash
       t.integer :height
       t.integer :time
-      t.integer :total_fee
+      t.bigint :total_fee
       t.integer :subsidy
 
       t.timestamps

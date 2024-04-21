@@ -2,7 +2,7 @@
 <main class="container">
   <div class="header">
     <h1>Halving Party 2024</h1>
-    <h2>Latest Block Height:
+    <h2 class="<%= @blocks&.first&.height&.to_i == 840000 ? 'halving' : 'boring' %>">Block Height:
       <div id="block_height">
         <%= @blocks.first&.height || "TBD" %>
       </div>

@@ -30,3 +30,14 @@ body {
   line-height: var(--line-height-body);
   font-family: var(--font-family-sans);
 }
+
+h2 {
+  font-size: 96px;
+
+  &.halving {
+    color: var(--color-secondary);
+  }
+  &.boring {
+    color: var(--color-primary);
+  }
+}

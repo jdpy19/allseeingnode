@@ -12,8 +12,7 @@ class FetchBlockJob < ApplicationJob
           block = Block.create({
             block_hash: stats['blockhash'],
             height: stats['height'],
-            time: stats['time'],
-            total_fee: stats['totalfee'],
+            time: stats['mediantime'],
             subsidy: stats['subsidy']
           })
         end

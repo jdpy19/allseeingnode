@@ -18,7 +18,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_19_172855) do
     t.string "block_hash"
     t.integer "height"
     t.integer "time"
-    t.integer "total_fee"
+    t.bigint "total_fee"
     t.integer "subsidy"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
